@@ -43,7 +43,7 @@ class SAZ2LRScript(object):
 
 
 if __name__ == '__main__':
-    sazFile = r"Input_SAZ_Files/4444.saz"
+    sazFile = r"Input_SAZ_Files/1.saz"
     LRScriptFile = r"Output_C_Files/Action.c"
     f = open(LRScriptFile, 'w')
     saz_converter = SAZ2LRScript(sazFile)

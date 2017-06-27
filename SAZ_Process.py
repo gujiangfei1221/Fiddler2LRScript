@@ -87,7 +87,7 @@ class SAZ_Process(object):
 
 if __name__ == '__main__':
     sazProcess = SAZ_Process()
-    sazFile = r"Input_SAZ_Files\shangchuanwenjian2.saz"
+    sazFile = r"Input_SAZ_Files\1.saz"
     requestList = sazProcess.GetRequestList(sazFile)
     print requestList
     request = requestList[0]
