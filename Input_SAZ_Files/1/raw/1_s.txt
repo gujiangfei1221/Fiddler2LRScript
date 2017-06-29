@@ -1,8 +1,0 @@
-HTTP/1.1 200 OK
-Server: nginx/1.10.2
-Date: Tue, 27 Jun 2017 01:46:22 GMT
-Content-Length: 262
-Connection: keep-alive
-X-Frame-Options: SAMEORIGIN
-
-{"controls":[{"result":{"isWriteFileOk":true},"description":"\u5904\u7406\u6210\u529F","status":"1"},{"id":"_common_hidden_viewdata","value":""}],"custom":{"allowFileList":"jpg,jpeg,bmp,gif,pdf,png","maxSizeKB":"1024"},"status":{"code":"200","text":"","url":""}}

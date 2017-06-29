@@ -48,7 +48,6 @@ class SAZ_Process(object):
     ''' 解析单个request list，以dict的形式返回 '''
     def ParseRequest(self, request):
         requestDict = {}
-        # request[0] = 'GET http://52test.org HTTP/1.1'
         [requestDict['requestMethod'], requestDict['requestURL'], requestDict['httpVersion']] = request[0].split(" ")
         elementNum = len(request)
         for i in range(elementNum):
@@ -66,7 +65,7 @@ class SAZ_Process(object):
         elementNum = len(request)
         for i in request:
             if('ui-comments' in i):
-                requestDict['comment'] = request[12].split(' ')[-2].split('"')[1]
+                requestDict['comment'] = i.split(' ')[-2].split('"')[1]
         if(not requestDict.has_key('comment')):
             requestDict['comment'] = None
         return requestDict
